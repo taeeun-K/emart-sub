@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+#wrap{width: 100%; margin: 0 auto;}
+header{width: 100%;}
+/* .topBan{width: 100%;} */
+.mainHead{display: flex; width: 100%; background-color: #fff;;}
+.leftIcons{display: flex; width: 90px;}
+.leftIcons a{position: relative; display: inline-block; width: 50%; height: 58px; line-height: 58px;}
+.leftIcons a span{position: absolute; top: 50%; display: inline-block; width: 22px; background-image: url(./../images/icon@2x.png); background-repeat: no-repeat; background-size: 653px 595px;}
+.leftIcons a.iconBack span{right: 0; margin-top: -9px; height: 18px; text-indent: -9999px; background-position: -165px -546px;}
+.leftIcons a.iconHome span{left: 50%; margin-left: -11px; margin-top: -10px; height: 20px; text-indent: -9999px; background-position: -99px -546px;}
+
+h1{grid-area: center; width: calc(100% - 180px); height: 58px; font-size: 16px; font-weight: 700; color: #222; line-height: 58px; text-align: center;}
+
+.btnMnu{grid-area: right; width: 90px;}
+.btnMnu a{position: relative; display: inline-block; width: 100%; height: 58px; line-height: 58px;}
+.btnMnu a span{position: absolute; top: 50%; right: 25px; margin-top: -8px; display: inline-block; width: 21px; height: 16px; text-indent: -9999px; background-image: url(./../images/icon-common.png); background-repeat: no-repeat; background-size: auto 300px; background-position: -224px -4px;}
+
+
+
+section{width: 100%;}
+h2{display: none;}
+
+/* 본문 탭 */
+.mainTab{width: 100%;}
+.mainTab ul.tab{display: flex; width: 100%;}
+.mainTab ul.tab li{width: 50%; background: none; border: none; outline: none; font-size: 14px; text-align: center; background-color: #fff; border-bottom: 1px solid #e8e8e8;}
+.mainTab ul.tab li a{display: inline-block; height: 52px; text-decoration: none; color: #767676; line-height: 52px;}
+.mainTab ul.tab li.on{border-bottom: 2px solid #000;}
+.mainTab ul.tab li.on a{color: #000; font-weight: 700;}
+
+
+
+/* 탭 컨텐츠 리스트 */
+.mainCont{position: relative; width: 100%; margin: 48px 0 0;}
+
+/* 기본상태 당첨자발표 리스트 none처리 */
+.mainCont .eventCont{display: none;}
+
+/* 탭 컨텐츠 리스트 - 공통 */
+.mainCont .contents{position: absolute; left: 0; top: 0; width: 100%;}
+.contents ul{width: 100%; padding: 0 20px; box-sizing: border-box;}
+.contents ul li.list{width: 100%; padding-bottom: 40px; box-sizing: border-box;} 
+.contents ul li.list:last-child{padding-bottom: 0;}
+.contents ul li.list a{display: block; height: 246px;}
+.contents ul li.list a .img-area{position: relative; width: 100%; height: 160px;overflow: hidden;}
+.contents ul li.list a img{position: absolute;left: 0;top: 50%; display: block; margin-top: -60px; width: 100%; height: auto; border-radius: 6px;}
+
+.contents ul li.list a .icon-area{position: relative; text-align: right;}
+.contents ul li.list a .icon-area::after{position: absolute; top: -12px; right: 12px; content: ""; width: 72px; height: 13px; background: url(./../images/list-img-blind.png) no-repeat; background-size: contain; z-index: 1000;}
+.contents ul li.list a .icon-area span{position: absolute; right: 20px; top: -3px; display: inline-block; width: 54px; height: 54px; font-weight: 500; line-height: 54px; text-align: center; color: #fff; border-radius: 50%; z-index: 2000;}
+
+
+.contents ul li.list a .cont-area{margin-top: 16px;}
+.contents ul li.list a .cont-area p.cont-title{width: 80%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.contents ul li.list a .cont-area p.cont-title strong{font-size: 16px; font-weight: 700; }
+.contents ul li.list a .cont-area p.cont-text{margin-top: 2px; font-size: 14px;}
+.contents ul li.list a .cont-area p.cont-date{margin-top: 1px; font-size: 13px;}
+.contents ul li.list a .cont-area p.cont-date span.date-font{font-family: 'roboto';}
+
+/* 컨텐츠리스트 개별-ing */
+.contents ul.ingList li.list a .icon-area span{font-size: 12px; background-color: #f86167;}
+
+/* 컨텐츠리스트 개별-event */
+.contents ul.eventList li.list a .icon-area span{font-size: 11px; background-color: #4d96f5;}
+
+
+
